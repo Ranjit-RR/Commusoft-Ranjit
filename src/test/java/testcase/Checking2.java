@@ -11,7 +11,7 @@ import pages.Invoice;
 import pages.LoginPage;
 import pages.NotesandCommunication;
 
-public class Checking extends Baseclass {
+public class Checking2 extends Baseclass {
 	
 	String homepage;
    
