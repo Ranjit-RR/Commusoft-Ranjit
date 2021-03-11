@@ -16,8 +16,6 @@ public class ezhil_testcase extends Baseclass {
 	
 	String homepage;
    
-	
-	
 	@Test(priority = 0)
 	public void login() throws InterruptedException
 	{
@@ -26,7 +24,8 @@ public class ezhil_testcase extends Baseclass {
 	@Test(priority = 1)
 	public void Addpayment_job() throws InterruptedException
 	{
-		driver.findElement(By.xpath("id=\"customertypecustomer\"")).click();
+		driver.findElement(By.xpath("id='customertypecustomer'")).click();
+		Thread.sleep(3000);
 	}
 	
 		
