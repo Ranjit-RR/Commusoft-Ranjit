@@ -26,7 +26,7 @@ public class ezhil_testcase extends Baseclass {
 	@Test(priority = 1)
 	public void Addpayment_job() throws InterruptedException
 	{
-		driver.findElement(By.xpath("id=\"customertypecustomer\"")).click();
+		driver.findElement(By.xpath("id='customertypecustomer'")).click();
 	}
 	
 		
