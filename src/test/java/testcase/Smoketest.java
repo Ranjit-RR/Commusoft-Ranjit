@@ -40,14 +40,15 @@ public class Smoketest extends Baseclass {
 		customer.Customer_email();
 		customer.Customer_AddressLine1();
 		customer.Customer_Save();
-		Thread.sleep(15000);
-		customerpage = driver.getCurrentUrl();
+		Thread.sleep(25000);
+		
 	}
 	@Test(priority = 2)
 	public void Add_job_Prefinal() throws InterruptedException
 	{
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		CreateJob job = new CreateJob(driver);
+		customerpage = driver.getCurrentUrl();
 		job.addjob();
 		job.JobDescription("PreFinal");
 		job.createjob();
