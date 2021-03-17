@@ -325,7 +325,11 @@ public class Smoketest extends Baseclass {
 		diary.Diary_Normal_EvenDescription();
 		diary.Diary_Save();
 	}
-	
+	@Test(priority = 1)
+	public void Estimate_mail() throws InterruptedException
+	{
+		
+	}
 	
 	
 

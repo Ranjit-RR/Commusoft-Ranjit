@@ -52,8 +52,9 @@ public class Baseclass extends Wrapper {
 	}
 	
 	@AfterMethod
-	public void teardown(ITestResult result) throws IOException
+	public void teardown(ITestResult result) throws IOException, InterruptedException
 	{
+		Thread.sleep(6000);
 		if(result.getStatus()==ITestResult.SUCCESS)
 		{
 			logger.log(Status.PASS, "Method Been Executed Sucessfully:-" +result.getName());
