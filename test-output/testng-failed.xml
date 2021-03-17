@@ -3,14 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.ezhil_testcase">
+      <class name="testcase.Smoketest">
         <methods>
+          <include name="WA_Addpayment_job"/>
+          <include name="Addjob_NoRules_Adddtional"/>
           <include name="initial"/>
-          <include name="Addpayment_job"/>
+          <include name="Estimate_Accept"/>
+          <include name="WA_Estimate_Accept"/>
+          <include name="Addjob_NoRules"/>
           <include name="teardown"/>
+          <include name="WA_Add_job_Prefinal"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testcase.ezhil_testcase -->
+      </class> <!-- testcase.Smoketest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
