@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.ezhil_testcase">
+      <class name="testcase.DiaryModule">
         <methods>
           <include name="initial"/>
-          <include name="Addpayment_job"/>
           <include name="teardown"/>
+          <include name="Diary_Normal"/>
           <include name="setup"/>
+          <include name="Diary_Job"/>
         </methods>
-      </class> <!-- testcase.ezhil_testcase -->
+      </class> <!-- testcase.DiaryModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -40,7 +40,7 @@ public class Smoketest extends Baseclass {
 		customer.Customer_email();
 		customer.Customer_AddressLine1();
 		customer.Customer_Save();
-		Thread.sleep(6000);
+		Thread.sleep(15000);
 		customerpage = driver.getCurrentUrl();
 	}
 	@Test(priority = 2)
@@ -283,6 +283,46 @@ public class Smoketest extends Baseclass {
 		estimate.Estimate_InvoiceSchedule_Retention();
 		estimate.Estimate_SendtoCustomer();
 		estimate.Estimate_Accept();
+	}
+	@Test(priority = 15)
+	public void Diary_Estimate() throws InterruptedException
+	{
+		Thread.sleep(6000);
+		Diary diary = new Diary(driver);
+		diary.Diary_Module();
+		diary.Diary_Daily();
+		diary.Diary_Today();
+		diary.Diary_PM();
+		diary.Diary_Estimate();
+		diary.Diary_propertysearch();
+		Thread.sleep(3000);
+		diary.Diary_Estimate_EventDescription();
+		diary.Diary_Save();
+	}
+	@Test(priority = 16)
+	public void Diary_Job() throws InterruptedException
+	{
+		Diary diary = new Diary(driver);
+		diary.Diary_Module();
+		diary.Diary_Daily();
+		diary.Diary_Today();
+		diary.Diary_Timing();
+		diary.Diary_job();
+		diary.Diary_propertysearch();
+		Thread.sleep(3000);
+		diary.Diary_Job_EventDescription();
+		diary.Diary_Save();
+	}
+	@Test(priority = 17)
+	public void Diary_Normal() throws InterruptedException
+	{
+		Diary diary = new Diary(driver);
+		diary.Diary_Module();
+		diary.Diary_Daily();
+		diary.Diary_Today();
+		diary.Diary_PM();
+		diary.Diary_Normal_EvenDescription();
+		diary.Diary_Save();
 	}
 	
 	
