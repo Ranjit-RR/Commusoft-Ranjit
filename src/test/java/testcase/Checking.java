@@ -39,6 +39,7 @@ public class Checking extends Baseclass {
 		invoice.InvoiceTab();
 		invoice.addinvoice();
 		invoice.Pre_Final_invoice();
+		Thread.sleep(3000);
 		invoice.Invoice_Breakdown_Full_breakdown();
 		invoice.invoice_description();
 		invoice.Full_Breakdown_des("Price 1");
