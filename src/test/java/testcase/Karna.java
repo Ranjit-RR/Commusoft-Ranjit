@@ -7,6 +7,7 @@ import action.Baseclass;
 import pages.CreateJob;
 import pages.Customer;
 import pages.LoginPage;
+import pages.searchengine;
 
 public class Karna extends Baseclass {
 
@@ -37,6 +38,16 @@ String homepage;
 		Thread.sleep(7000);
 		job.JobCost();
 		job.JobCostPO();
+		searchengine search = new searchengine(driver);
+		search.searchbox_supplier("supplier");
+		search.searchbox_supplier_parts("Parts");
+		search.searchbox_supplier_parts_nominalcode("Part");
+		search.parts_deliverymethod("Delivery to Office");
+		search.supplierpo_items("Item");
+		job.PO_item_unitprice();
+		search.searchbox_supplier_item_nominalcode("Parts");
+		job.Add_PO_button();
+		
 		
 	}
 	
