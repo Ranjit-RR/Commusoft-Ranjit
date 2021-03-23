@@ -39,6 +39,7 @@ String homepage;
 		job.JobCost();
 		job.JobCostPO();
 		searchengine search = new searchengine(driver);
+		Thread.sleep(3000);
 		search.searchbox_supplier("supplier");
 		search.searchbox_supplier_parts("Parts");
 		search.searchbox_supplier_parts_nominalcode("Part");
