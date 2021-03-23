@@ -284,6 +284,7 @@ public class Smoketest extends Baseclass {
 		estimate.Estimate_InvoiceSchedule_Retention();
 		estimate.Estimate_SendtoCustomer();
 		estimate.Estimate_Accept();
+		Thread.sleep(7000);
 	}
 	@Test(priority = 15)
 	public void Diary_Estimate() throws InterruptedException
@@ -325,12 +326,8 @@ public class Smoketest extends Baseclass {
 		diary.Diary_Normal_EvenDescription();
 		diary.Diary_Save();
 	}
-	@Test(priority = 1)
-	public void Estimate_mail() throws InterruptedException
-	{
-		
-	}
-	
+
+	public void Diary_Normlal() throws InterruptedException{}
 	
 
 }
